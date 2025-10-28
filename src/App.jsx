@@ -1,9 +1,19 @@
 import { useState } from 'react'
 import Login from './Login'
-import Parent from './props/Parent'
+//import Parent from './props/Parent'
 //import A from './propsdrilling/A'
-import Parent1 from './props1/Parent1'
-import A from './statelifting/A'
+//import Parent1 from './props1/Parent1'
+
+//import A from './statelifting/A'
+import Parent from './props2/child-child/Parent'
+//import A from './Globalstate/usereducer-contextAPI/A'
+//import A from './localstate/usereducer/A'
+//import A from './Globalstate/contextAPI/A'
+import A from './Globalstate/Redux/A'
+import { Provider } from 'react-redux';
+import { store } from './Redux/Store';
+
+
 
 function App() {
   var a=10
@@ -26,7 +36,12 @@ return (
    {/* <Parent/> */}
    {/* <A/> */}
    {/* <Parent1/> */}
-   <A/>
+   {/* <A/> */}
+   {/* {/* <Parent/>} */}
+   <Provider store={store}>
+    <A/>
+   </Provider>
+  
     </>
   )
 }
