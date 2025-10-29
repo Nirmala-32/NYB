@@ -9,9 +9,12 @@ import Parent from './props2/child-child/Parent'
 //import A from './Globalstate/usereducer-contextAPI/A'
 //import A from './localstate/usereducer/A'
 //import A from './Globalstate/contextAPI/A'
-import A from './Globalstate/Redux/A'
+//import A from './Globalstate/Redux/A'
 import { Provider } from 'react-redux';
 import { store } from './Redux/Store';
+import A from './map/A';
+//import A from './Asynchronousdata/localstate/usereducer/A';
+//import A from './Asynchronousdata/localstate/usestate/A';
 
 
 

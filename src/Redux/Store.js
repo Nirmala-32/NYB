@@ -12,7 +12,7 @@ let reducerfunction=(state=initialState,action)=>{
             case "Decrease":
                 return {count:state.count-1}
                 case "reset":
-                return {count:0}
+                return {count:initialState.count}
                 default:
                     return state
     }
